@@ -13,6 +13,7 @@ module.exports = {
     node: true,
   },
   root: true,
+  ignorePatterns: ['!.storybook'],
   extends: [
     'next',
     'eslint:recommended',
@@ -22,6 +23,7 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:prettier/recommended',
     'plugin:react-hooks/recommended',
+    'plugin:storybook/recommended',
   ],
   plugins: ['prettier', '@typescript-eslint', 'react', 'react-hooks'],
   rules: {
